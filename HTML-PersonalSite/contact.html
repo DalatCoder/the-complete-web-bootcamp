@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact Me</title>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
+
   <body>
     <h3>Thông tin liên hệ</h3>
     <ul>
       <li>Github: <a href="https://github.com/DalatCoder">DalatCoder</a></li>
       <li>Email: hieuntctk42@gmail.com</li>
     </ul>
+    <hr />
+    <form
+      action="mailto:hieuntctk42@gmail.com"
+      method="POST"
+      enctype="text/plain"
+    >
+      <label for="">Your name: </label>
+      <input type="text" name="guestName" id="" /> <br />
+      <label for="">Your email: </label>
+      <input type="email" name="guestEmail" id="" /> <br />
+      <label for="">Your message: </label> <br />
+      <textarea name="guestMessage" id="" cols="30" rows="10" enc></textarea
+      ><br />
+      <input type="submit" value="✈️" />
+    </form>
   </body>
 </html>
