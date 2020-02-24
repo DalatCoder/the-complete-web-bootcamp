@@ -43,9 +43,11 @@ function playAudio(label) {
 }
 
 function activeDrum(label) {
+    if (label < 'a' || label > 'z') return;
+    
     const drumEl = document.querySelector(`.${label}`);
     if (drumEl) {
         drumEl.classList.add("active-drum");
-        setTimeout(() => drumEl.classList.remove(`active-drum`), 500);
+        setTimeout(() => drumEl.classList.remove(`active-drum`), 100);
     }
 }
